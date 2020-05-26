@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 const pi = 3.14
 
@@ -13,6 +16,12 @@ func main() {
 	var a, b, c = 1, "Go", 3
 	var d float32 = 2
 	message3 := "Hey, Go!"
+
+	var myString = "3"
+	myNumber, err := strconv.Atoi(myString)
+
+	fmt.Println(myNumber)
+	fmt.Println(err)
 
 	fmt.Println(message)
 	fmt.Println(message2)
