@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 	var score float64
@@ -21,5 +24,16 @@ func main() {
 		fmt.Println("Your grade is: A")
 	default:
 		fmt.Println("Please enter score lower or equal than 100")
+	}
+
+	for i := 0; i <= 9; i++ {
+		fmt.Println("i: ", i)
+	}
+
+	sum := 1
+	for sum < 10 {
+		sum += sum
+		fmt.Println(sum)
+		time.Sleep(500 * time.Millisecond)
 	}
 }
